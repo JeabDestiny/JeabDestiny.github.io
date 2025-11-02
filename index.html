@@ -16,7 +16,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      /* ปรับให้พื้นหลังเข้ากับโลโก้ */
       background: linear-gradient(135deg, #ffe58f, #ffd666, #ffc53d);
       background-size: 200% 200%;
       animation: moveBg 10s ease infinite;
@@ -52,6 +51,8 @@
       margin-top: 40px;
       display: flex;
       gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .btn {
@@ -65,26 +66,37 @@
       color: white;
     }
 
+    /* ปุ่ม Facebook */
     .facebook {
       background: linear-gradient(135deg, #1877f2, #5590f5);
       box-shadow: 0 0 10px rgba(24, 119, 242, 0.5);
     }
-
     .facebook:hover {
       background: linear-gradient(135deg, #5590f5, #1877f2);
       transform: translateY(-4px);
       box-shadow: 0 0 20px rgba(24, 119, 242, 0.8);
     }
 
+    /* ปุ่ม Instagram */
     .instagram {
       background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
       box-shadow: 0 0 10px rgba(250, 126, 30, 0.5);
     }
-
     .instagram:hover {
       transform: translateY(-4px);
       box-shadow: 0 0 20px rgba(214, 41, 118, 0.8);
       filter: brightness(1.1);
+    }
+
+    /* ปุ่ม Roblox */
+    .roblox {
+      background: linear-gradient(135deg, #ff4757, #ff6b81);
+      box-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
+    }
+    .roblox:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 20px rgba(255, 71, 87, 0.8);
+      filter: brightness(1.05);
     }
 
     .logo {
@@ -126,7 +138,12 @@
     <a href="https://www.instagram.com/n2xxn__/" class="btn instagram" target="_blank">Instagram</a>
   </div>
 
-  <!-- โลโก้ -->
+  <!-- ปุ่ม Roblox -->
+  <div class="buttons">
+    <a href="https://www.roblox.com/catalog/78561911471928/JeabJeab-Shirt" class="btn roblox" target="_blank">My Shirt</a>
+    <a href="https://www.roblox.com/catalog/132352056031004/JeabJeab-Pants" class="btn roblox" target="_blank">My Pants</a>
+  </div>
+
   <img src="Jeablogo.png" alt="JeabJeab Logo" class="logo" />
 </body>
 </html>
