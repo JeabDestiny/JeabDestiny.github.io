@@ -1,0 +1,1 @@
+const c=document.querySelector('.card');document.addEventListener('mousemove',e=>{const x=(e.clientX/window.innerWidth-.5)*8,y=(e.clientY/window.innerHeight-.5)*-8;c.style.transform=`rotateX(${y}deg) rotateY(${x}deg)`});

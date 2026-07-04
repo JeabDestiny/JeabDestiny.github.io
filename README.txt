@@ -1,0 +1,1 @@
+วางไฟล์ Jeablogo.png ไว้ในโฟลเดอร์เดียวกับ index.html
