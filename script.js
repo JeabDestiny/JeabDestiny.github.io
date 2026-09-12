@@ -1,1 +1,13 @@
-const c=document.querySelector('.card');document.addEventListener('mousemove',e=>{const x=(e.clientX/window.innerWidth-.5)*8,y=(e.clientY/window.innerHeight-.5)*-8;c.style.transform=`rotateX(${y}deg) rotateY(${x}deg)`});
+const card = document.getElementById('card');
+
+document.addEventListener('mousemove', (event) => {
+  const x = (event.clientX / window.innerWidth - 0.5) * 7;
+  const y = (event.clientY / window.innerHeight - 0.5) * -7;
+  card.style.transform =
+    `perspective(1000px) rotateX(${y}deg) rotateY(${x}deg)`;
+});
+
+document.addEventListener('mouseleave', () => {
+  card.style.transform =
+    'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+});
