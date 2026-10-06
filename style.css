@@ -222,6 +222,13 @@ h1{
   line-height:1;
 }
 
+.discord-logo{
+  width:18px;
+  height:18px;
+  object-fit:contain;
+  flex:0 0 18px;
+}
+
 footer{
   margin-top:19px;
   color:#8b6c51;
