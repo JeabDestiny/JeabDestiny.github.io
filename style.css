@@ -212,6 +212,10 @@ h1{
 .instagram{background:linear-gradient(135deg,#d95a98,#9a62dd)}
 .tiktok{background:linear-gradient(135deg,#252525,#111111)}
 .x-twitter{background:linear-gradient(135deg,#3a3a3a,#111111)}
+.discord{
+  grid-column:1 / -1;
+  background:linear-gradient(135deg,#7289da,#5865f2);
+}
 
 .button-icon{
   font-size:16px;
